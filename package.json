@@ -1,22 +1,23 @@
 {
     "name": "vscode-xi",
     "displayName": "vscode-xi",
-    "description": "Xi Language for VSCode",
+    "description": "Xi and Rho Language for VSCode",
     "version": "0.0.4",
-    "publisher": "chillee",
+    "publisher": "dragon-girl88",
     "repository": {
-        "url": "https://github.com/Chillee/VSCode-Xi"
+        "url": "https://github.com/dragon-girl88/VSCode-Xi-Rho"
     },
     "engines": {
-        "vscode": "^1.21.0"
+        "vscode": "^1.67.2"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
-    "icon": "images/cornell.png",
+    "icon": "images/XiRhoLogo.png",
     "main": "./out/src/extension",
     "activationEvents": [
-        "onLanguage:xi"
+        "onLanguage:xi",
+        "onLanguage:rho"
     ],
     "contributes": {
         "languages": [
@@ -31,6 +32,18 @@
                     ".ixi"
                 ],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "rho",
+                "aliases": [
+                    "Rho",
+                    "rho"
+                ],
+                "extensions": [
+                    ".rh",
+                    ".ri"
+                ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
@@ -38,15 +51,20 @@
                 "language": "xi",
                 "scopeName": "text.xi",
                 "path": "./syntaxes/xi.tmLanguage.json"
+            },
+            {
+                "language": "rho",
+                "scopeName": "text.rh",
+                "path": "./syntaxes/rho.tmLanguage.json"
             }
         ]
     },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install && tsc"
-    },
     "devDependencies": {
         "@types/node": "*",
-        "vscode": "1.0.3",
-        "typescript": "2.0.6"
+        "typescript": "2.0.6",
+        "vscode": "^0.9.9"
+    },
+    "dependencies": {
+        "@vscode/test-electron": "^2.1.3"
     }
 }
