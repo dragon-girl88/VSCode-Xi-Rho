@@ -2,7 +2,7 @@
     "name": "vscode-xi",
     "displayName": "vscode-xi",
     "description": "Xi and Rho Language for VSCode",
-    "version": "0.0.4",
+    "version": "0.0.8",
     "publisher": "dragon-girl88",
     "repository": {
         "url": "https://github.com/dragon-girl88/VSCode-Xi-Rho"

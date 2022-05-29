@@ -5,3 +5,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 - Initial release
+
+## [5/28/22]
+Migrated from node_module/vscode to test electron

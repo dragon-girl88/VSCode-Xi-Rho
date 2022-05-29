@@ -109,12 +109,12 @@
 							"include": "#functions"
 						},
 						{
-							"include": "text.xi"
+							"include": "text.rh"
 						}
 					]
 				}
 			]
 		}
 	},
-	"scopeName": "text.xi"
+	"scopeName": "text.rh"
 }
